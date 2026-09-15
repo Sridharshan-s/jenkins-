@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0b0b0b;
+    color: white;
+}
+
+/* Header */
+
+header {
+    height: 75px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo span,
+footer span {
+    color: #ff3b30;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff3b30;
+}
+
+/* Hero */
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+    background:
+        linear-gradient(120deg, #090909, #1c1c1c);
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.small-title {
+    color: #ff3b30;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 75px;
+    line-height: 0.95;
+    margin-bottom: 30px;
+}
+
+.hero h1 span {
+    color: #ff3b30;
+}
+
+.hero p {
+    color: #bbb;
+    line-height: 1.7;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff3b30;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #d92820;
+}
+
+.bike-icon {
+    font-size: 220px;
+    filter: drop-shadow(0 20px 20px #000);
+}
+
+/* Bikes */
+
+.bikes {
+    padding: 90px 8%;
+    text-align: center;
+    background: #111;
+}
+
+.bikes h2,
+.about h2 {
+    font-size: 42px;
+}
+
+.section-text {
+    color: #999;
+    margin: 15px 0 50px;
+}
+
+.bike-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.bike-card {
+    background: #1b1b1b;
+    width: 320px;
+    padding: 30px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.bike-card:hover {
+    transform: translateY(-10px);
+}
+
+.bike-image {
+    font-size: 100px;
+    padding: 20px;
+}
+
+.bike-card h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.bike-card p {
+    color: #999;
+    margin-bottom: 15px;
+}
+
+.bike-card h4 {
+    font-size: 24px;
+    color: #ff3b30;
+    margin-bottom: 20px;
+}
+
+.bike-card button {
+    border: none;
+    background: #ff3b30;
+    color: white;
+    padding: 12px 25px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.bike-card button:hover {
+    background: #d92820;
+}
+
+/* About */
+
+.about {
+    padding: 90px 10%;
+    text-align: center;
+}
+
+.about > p {
+    max-width: 700px;
+    margin: 20px auto 50px;
+    color: #aaa;
+    line-height: 1.7;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.features div {
+    background: #151515;
+    padding: 30px;
+    width: 280px;
+    border-radius: 8px;
+}
+
+.features h3 {
+    color: #ff3b30;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background: #050505;
+    padding: 50px;
+}
+
+footer p {
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 0 5%;
+    }
+
+    nav a {
+        margin-left: 10px;
+        font-size: 13px;
+    }
+
+    .hero {
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .bike-icon {
+        font-size: 120px;
+        margin-top: 40px;
+    }
+}
